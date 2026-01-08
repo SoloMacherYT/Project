@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My First Web Page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to Frontend Development</h1>
+    <p class="togglePara">Hi, My name is Prashant Sharma, & I am from Pokhara, Nepal. I have completed my Intermediate Certification from SHSS. I belong to a nuclear family.</p>   
+    <p class="togglePara"> My hobbies include Gaming (Esports) & Tech exploration.
+    <p class="togglePara">Talking about my strengths, I am a hardworking and self-disciplined person. I have good communication skills, and I am a quick learner.</p>
+    <p class="togglePara">My short-term goal is to explore differnet oppurtunities & my long term goal is to finish my undergraduate academic degree in CA.</p>
+    <p class="togglePara"> That's all about me.</p> 
+    
+    <button id="toggleBtn">Hide Paragraph</button>
+
+    <button id="myBtn"> Click Me</button>
+
+    <p id="data"> Now tell me about yourself:</p>
+
+        <input type="text" id="nameInput" placeholder="Enter your name"><br>
+
+        <!-- Button -->
+        <button id="submitBtn">Submit</button>
+  
+        <!-- Output area -->
+        <p id="outputText"></p>
+
+         <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="appendValue('/')">÷</button>
+      <button onclick="appendValue('*')">×</button>
+      <button onclick="appendValue('-')">−</button>
+      <button onclick="appendValue('+')">+</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
+    </div>
+  </div>
+
+  <button id="colorBtn">Change Background Color</button>
+
+
+<h2>Registration Form</h2>
+  
+  <form id="myForm">
+    <!-- Name field -->
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="nameError" class="error"></p>
+    <br>
+
+    <!-- Email field -->
+    <label for="emailInput">Email:</label>
+    <input type="text" id="emailInput" placeholder="Enter your email">
+    <p id="emailError" class="error"></p>
+    <br>
+
+    <button id="submit">Submit</button>
+  </form>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
